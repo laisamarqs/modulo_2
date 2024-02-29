@@ -1,0 +1,15 @@
+Solução Recursiva (Top-Down):
+
+A solução recursiva faz chamadas recursivas até alcançar o caso base.
+Cada chamada recursiva diminui o valor de n em 1.
+A complexidade de tempo é O(n), pois há uma chamada recursiva para cada número de 1 a n.
+Solução Iterativa (Bottom-Up):
+
+A solução iterativa utiliza um loop que vai de 2 até n.
+Em cada iteração do loop, uma operação constante é realizada.
+Portanto, a complexidade de tempo é O(n), pois há um loop que executa n vezes.
+Ambas as soluções têm complexidade de tempo linear O(n), onde n é o número para o qual estamos calculando o fatorial.
+
+A solução feita com programação dinâmica é melhor porque evita o retrabalho desnecessário. Na abordagem bottom-up, os resultados intermediários são armazenados em um array (ou hashmap, no caso do top-down) e reutilizados conforme necessário. Isso elimina a necessidade de recalculá-los a cada chamada, tornando a solução mais eficiente em termos de tempo de execução, especialmente para entradas grandes.
+
+Por outro lado, a solução recursiva (top-down) sem memoização recalcula os mesmos valores repetidamente, o que aumenta consideravelmente o tempo de execução à medida que o valor de entrada aumenta. A memoização nesta abordagem resolve esse problema, mas a abordagem bottom-up já resolve esse problema naturalmente sem a necessidade de memoização adicional.
